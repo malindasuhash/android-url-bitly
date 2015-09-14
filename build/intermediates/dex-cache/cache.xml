@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-d7218eee169622685ff1bccc8398e44d14c7c334.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-c271985e831982c102d6fb023db17ae9c00e6348.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-4d1ca8c770b2a66ccb854b1ce69a0aa0fbb68921.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-c1c9216179d0d3ca79447e175063bb8b904bbdf6.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-8d9f95dd0bc4aa9a9560a87901a9eb1a0da652b5.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-3cb10f593b382467c71f5f716d270ea5f0390c77.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-67094612daa92b1da78f48ab975faa2344125f19.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-200c3c2c42fe2093159aac6c49d8030a87752e76.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-ccb3f1f3341cd6f427e20ea10d296bb524c5cd8a.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-0db649d89a5cfd8581f94db7d3ebdadece3d1137.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-678a0da0daf547c55c481ab9f9803c710ddb632c.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-55aa0f9f0043e98ed2f5d0a8d2ed14ef757ceb15.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-4d4648ef87f5ddfcbb7dfc9f9fdc81e80d5b9997.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-2748c593376a80f8fe3b14cfc5ed109bf7bbd940.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-c091d5e84056b78544bb6398c7a33187f7d44581.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-063907e27e6f5dd85840614488203847451c2838.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-f2867481f3e048b65ae405901d7bec886c32d53a.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-0ff722b6b01c94cc7257de1f3ffeae420b7aaf77.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-2cb193d23e68de8c2859259846c3784d7d7a0b81.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-6f539cfd059ccd3bab9c4d3eee1f44f43ef30f12.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-4336e4aec31fbca20668962c23e16e4a96bb36f1.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-6533ada8d610b7bc5786d8916e328c5a1b829064.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-84686a28d815ea6a76a0e1037c24a3e74c3d26e8.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-a4ead1c996ac4dc2523fbcd211c72dcc253ad789.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-ae58fbb9d8cddf7b5209e9d83882db4e2aa5c8aa.jar" />
+    </item>
+    <item
+        jar="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="/Users/malindasuhash/Dev/Sandbox/TheShortenUrl/app/build/intermediates/pre-dexed/debug/classes-af29356d3c8b4c89fa00907bc0620d94c6145531.jar" />
+    </item>
+
+</items>
