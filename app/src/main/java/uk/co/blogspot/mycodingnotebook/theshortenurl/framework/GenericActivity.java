@@ -20,7 +20,7 @@ public class GenericActivity<T extends Operation> extends Activity {
         }
         else {
             Operations = (T) retainedFragmentManager.get();
-            Operations.onconfiguration(false);
+            Operations.onconfiguration(this, false);
         }
     }
 
@@ -28,6 +28,6 @@ public class GenericActivity<T extends Operation> extends Activity {
         T instance = ops.newInstance();
         retainedFragmentManager.put(instance);
         Operations = instance;
-        Operations.onconfiguration(true);
+        Operations.onconfiguration(this, true);
     }
 }

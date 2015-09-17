@@ -1,7 +1,11 @@
 package uk.co.blogspot.mycodingnotebook.theshortenurl.framework;
 
-/**
- * Created by malindasuhash on 16/09/15.
- */
+import android.util.Log;
+
 public class L {
+    private static final String TAG = "Shortner";
+
+    public static final void i(String message) {
+        Log.i(TAG, message);
+    }
 }

@@ -8,7 +8,8 @@ import uk.co.blogspot.mycodingnotebook.theshortenurl.R;
 import uk.co.blogspot.mycodingnotebook.theshortenurl.framework.GenericActivity;
 import uk.co.blogspot.mycodingnotebook.theshortenurl.models.UrlInfo;
 
-public class MainActivity extends GenericActivity<UrlInfo> {
+public class MainActivity extends GenericActivity<UrlInfo>
+        implements MainActivityFragment.OnShorten {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,5 +41,10 @@ public class MainActivity extends GenericActivity<UrlInfo> {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void shorten(String uri) {
+        Operations.handleUri(uri);
     }
 }
