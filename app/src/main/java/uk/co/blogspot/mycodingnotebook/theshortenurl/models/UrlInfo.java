@@ -1,23 +1,35 @@
 package uk.co.blogspot.mycodingnotebook.theshortenurl.models;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.util.Log;
 
 import uk.co.blogspot.mycodingnotebook.theshortenurl.Constants;
+import uk.co.blogspot.mycodingnotebook.theshortenurl.framework.AuthTask;
 import uk.co.blogspot.mycodingnotebook.theshortenurl.framework.L;
 import uk.co.blogspot.mycodingnotebook.theshortenurl.framework.Operation;
 
 public class UrlInfo implements Operation {
 
-    public void parseUrl()
-    {
+    private String urlToShorten;
 
-    }
-
-    public boolean handleUri(String uri)
+    public void handleUri(String uri)
     {
         L.i("Received string " + uri);
-        return false;
+        urlToShorten = uri;
+
+        Uri toShorten = Uri.parse(uri);
+
+        if (toShorten == null ||
+                toShorten.getAuthority() == null ||
+                !toShorten.getAuthority().contains(Constants.HTTP)) {
+            // Cannot be parsed, then show dialog
+            L.i("Sorry, the uri cannot be parsed");
+            //return;
+        }
+
+        AuthTask task = new AuthTask();
+        task.execute();
     }
 
     @Override
