@@ -1,15 +1,18 @@
 package uk.co.blogspot.mycodingnotebook.theshortenurl.activities;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import uk.co.blogspot.mycodingnotebook.theshortenurl.R;
+import uk.co.blogspot.mycodingnotebook.theshortenurl.framework.Configuration;
 import uk.co.blogspot.mycodingnotebook.theshortenurl.framework.GenericActivity;
 import uk.co.blogspot.mycodingnotebook.theshortenurl.models.UrlInfo;
 
 public class MainActivity extends GenericActivity<UrlInfo>
-        implements MainActivityFragment.OnShorten {
+        implements MainActivityFragment.OnShorten,
+        Configuration {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,5 +49,18 @@ public class MainActivity extends GenericActivity<UrlInfo>
     @Override
     public void shorten(String uri) {
         Operations.handleUri(uri);
+    }
+
+    @Override
+    public void set(String key, String value) {
+        SharedPreferences settings = getSharedPreferences(key, 0);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putString(key, value);
+    }
+
+    @Override
+    public String get(String key) {
+        SharedPreferences settings = getSharedPreferences(key, 0);
+        return settings.getString(key, "");
     }
 }

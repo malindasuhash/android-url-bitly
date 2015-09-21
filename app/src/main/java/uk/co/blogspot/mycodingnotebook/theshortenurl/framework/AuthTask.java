@@ -14,7 +14,6 @@ public class AuthTask extends AsyncTask<Void, Void, Void> {
         SecuredRestBuilder builder = new SecuredRestBuilder();
         BitlySvc all = builder.setEndpoint("https://api-ssl.bitly.com")
                 .setLoginEndpoint("https://api-ssl.bitly.com/oauth/access_token")
-                
                 .setLogLevel(RestAdapter.LogLevel.FULL)
                 .build().create(BitlySvc.class);
 

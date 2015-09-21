@@ -29,6 +29,8 @@ import retrofit.client.Request;
 import retrofit.client.Response;
 import retrofit.converter.Converter;
 import retrofit.mime.FormUrlEncodedTypedOutput;
+import uk.co.blogspot.mycodingnotebook.theshortenurl.Constants;
+import uk.co.blogspot.mycodingnotebook.theshortenurl.framework.Configuration;
 
 /**
  * A Builder class for a Retrofit REST Adapter. Extends the default implementation by providing logic to
@@ -52,26 +54,28 @@ import retrofit.mime.FormUrlEncodedTypedOutput;
  */
 public class SecuredRestBuilder extends RestAdapter.Builder {
 
+    public Configuration getConfiguration() {
+        return configuration;
+    }
+
+    public void setConfiguration(Configuration configuration) {
+        this.configuration = configuration;
+    }
+
     private class OAuthHandler implements RequestInterceptor {
 
-        private boolean loggedIn;
         private Client client;
         private String tokenIssuingEndpoint;
         private String username;
         private String password;
-        private String clientId;
-        private String clientSecret;
         private String accessToken;
 
-        public OAuthHandler(Client client, String tokenIssuingEndpoint, String username,
-                            String password, String clientId, String clientSecret) {
+        public OAuthHandler(Client client, String tokenIssuingEndpoint, String username, String password) {
             super();
             this.client = client;
             this.tokenIssuingEndpoint = tokenIssuingEndpoint;
             this.username = username;
             this.password = password;
-            this.clientId = clientId;
-            this.clientSecret = clientSecret;
         }
 
         /**
@@ -88,6 +92,8 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
         @Override
         public void intercept(RequestFacade request) {
             // If we're not logged in, login and store the authentication token.
+            boolean loggedIn = configuration.get(Constants.OAuthKey) != "";
+
             if (!loggedIn) {
                 try {
                     // This code below programmatically builds an OAuth 2.0 password
@@ -135,7 +141,7 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
                     } else {
                         // Extract the string body from the response
                         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(resp.getBody().in()));
-                        accessToken = bufferedReader.readLine();
+                        configuration.set(Constants.OAuthKey, bufferedReader.readLine());
 
                         // Extract the access_token (bearer token) from the response so that we
                         // can add it to future requests.
@@ -143,10 +149,7 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
 
                         // Add the access_token to this request as the "Authorization"
                         // header.
-                        request.addHeader("Authorization", "Bearer " + accessToken);
-
-                        // Let future calls know we've already fetched the access token
-                        loggedIn = true;
+                        request.addHeader("Authorization", "Bearer " + configuration.get(Constants.OAuthKey));
                     }
                 } catch (Exception e) {
                     throw new SecuredRestException(e);
@@ -155,7 +158,7 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
             else {
                 // Add the access_token that we previously obtained to this request as
                 // the "Authorization" header.
-                request.addHeader("Authorization", "Bearer " + accessToken );
+                request.addHeader("Authorization", "Bearer " + configuration.get(Constants.OAuthKey));
             }
         }
 
@@ -164,9 +167,8 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
     private String username;
     private String password;
     private String loginUrl;
-    private String clientId;
-    private String clientSecret = "";
     private Client client;
+    private Configuration configuration;
 
     public SecuredRestBuilder setLoginEndpoint(String endpoint){
         loginUrl = endpoint;
@@ -251,18 +253,6 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
         return this;
     }
 
-    public SecuredRestBuilder setClientId(String clientId) {
-        this.clientId = clientId;
-        return this;
-    }
-
-    public SecuredRestBuilder setClientSecret(String clientSecret) {
-        this.clientSecret = clientSecret;
-        return this;
-    }
-
-
-
     @Override
     public RestAdapter build() {
         if (username == null || password == null) {
@@ -274,7 +264,7 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
         if (client == null) {
             client = new OkClient();
         }
-        OAuthHandler hdlr = new OAuthHandler(client, loginUrl, username, password, clientId, clientSecret);
+        OAuthHandler hdlr = new OAuthHandler(client, loginUrl, username, password);
         setRequestInterceptor(hdlr);
 
         return super.build();
